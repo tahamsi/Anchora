@@ -1,0 +1,13 @@
+{
+  "base_model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "reward_model_name": "bert-base-uncased",
+  "sft_data_path": "data/sft.json",
+  "preference_data_path": "data/preferences.json",
+  "output_dir": "models",
+  "log_dir": "logs",
+  "batch_size": 2,
+  "sft_epochs": 1,
+  "reward_epochs": 1,
+  "rl_iterations": 100,
+  "max_length": 512
+}

@@ -47,9 +47,14 @@ def _tokenize_for_sft(example: Dict[str, str], tokenizer, max_length: int) -> Di
 
 
 def _collate(batch):
+    def _to_tensor(value):
+        if isinstance(value, torch.Tensor):
+            return value
+        return torch.tensor(value, dtype=torch.long)
+
     return {
         key: torch.nn.utils.rnn.pad_sequence(
-            [example[key] for example in batch], batch_first=True, padding_value=0
+            [_to_tensor(example[key]) for example in batch], batch_first=True, padding_value=0
         )
         for key in batch[0]
     }

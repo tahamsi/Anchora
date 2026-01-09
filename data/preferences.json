@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "Summarize HTTP status codes.",
+    "response_a": "HTTP status codes indicate the result of a request, such as 200 for success and 404 for not found.",
+    "response_b": "HTTP status codes are numbers used only by servers for logging.",
+    "label": 1
+  },
+  {
+    "prompt": "What is memoization?",
+    "response_a": "Memoization is caching the results of expensive function calls to reuse later.",
+    "response_b": "Memoization is deleting a cache to save space.",
+    "label": 1
+  }
+]

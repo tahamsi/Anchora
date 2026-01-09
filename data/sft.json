@@ -1,0 +1,4 @@
+[
+  {"prompt": "Explain what a binary tree is.", "completion": "A binary tree is a tree data structure where each node has at most two children, typically called left and right."},
+  {"prompt": "Give two benefits of unit testing.", "completion": "Unit tests catch regressions early and document expected behavior for future changes."}
+]
